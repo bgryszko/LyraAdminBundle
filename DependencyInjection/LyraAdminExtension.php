@@ -67,14 +67,14 @@ class LyraAdminExtension extends Extension
         $this->setRouteLoaderOptions($container);
         $this->setSecurityManagerOptions($container);
         $this->setMenuOptions($container);
-
+/*
         $resources = array();
 
         if ($container->has('twig.form.resources')) {
             $resources = $container->getParameter('twig.form.resources');
         }
         $resources[] = 'LyraAdminBundle:Form:fields.html.twig';
-        $container->setParameter('twig.form.resources', $resources);
+        $container->setParameter('twig.form.resources', $resources);*/
     }
 
     public function configureFromMetadata(ContainerBuilder $container)
